@@ -95,7 +95,7 @@ imagesetbrush($img, $cloud);
 
 imageline($img, 600, 50, 600, 80, IMG_COLOR_BRUSHED);
 
-imagefttext($img, 13, 0, 550, 80, $black, $font_file, "8\n$title");
+imagefttext($img, 13, 0, 550, 80, $black, $font_file, "9\n$title");
 
 
 imageantialias($img, true);
