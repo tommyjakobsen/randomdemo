@@ -60,7 +60,7 @@ function refreshIframe(){
 var iframe = document.getElementById('myframe');
 iframe.src = iframe.src;
 }
-setInterval(refreshIframe, 2000);
+setInterval(refreshIframe, 4000);
 </script>
 
 <?php
