@@ -22,7 +22,6 @@ body {
   background-image: url('./img/${bgcolor}_cloud.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: left; 
   background-size: auto;
 }
 ";
