@@ -30,7 +30,9 @@ body {
 </style>
 </head>
 <body>
-<h3>$title</h3>
+<?php
+echo " <h3>$title</h3>";
+?>
 
 </body>
 </html>
