@@ -28,17 +28,17 @@ onload=gogo;
 <?php
 
 if(isset($_GET[counter]))
-	{
-	$counter=$counter+$_GET["counter"];
-	}else{
-	$counter=0;
-	}
+        {
+        $counter=$counter+$_GET["counter"];
+        }else{
+        $counter=0;
+        }
 
 if(getenv('background') !== false)
     {
         $bgcolor=getenv('background');
      }else{
-	$bgcolor="blue";
+        $bgcolor="blue";
      }
 
 if(getenv('title') !== false)
@@ -48,14 +48,7 @@ if(getenv('title') !== false)
         $title="My little place...";
      }
 
-echo "
-body { 
-  background-image: url('./img/${bgcolor}_cloud.png');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: auto;
-}
-";
+
 
 ?>
 </style>
@@ -71,13 +64,12 @@ setInterval(refreshIframe, 2000);
 </script>
 
 <?php
-echo "<center><h1>How did ${title} come around?</h1></center>";
-echo "<table border=0 cellspacing=0>
-<tr><td align=middle><b>Prod:</b></td><td align=middle><b>DevOps:</b></td></tr>
-<?php
- echo "<tr><td align=middle><iframe src=\"http://img.php?counter=$counter."\" frameBorder=\"1\" scrolling=\"no\" id='myframe' width=270></iframe>
+//print_r($_SERVER);
+echo "<center><h1>How did ${title} come around?</h1>";
+echo "<table border=0 cellspacing=0 width=100% height=100%>";
+echo "<tr><td align=middle><iframe width=100% height=100% src=\"http://$_SERVER[HTTP_HOST]/img.php?counter=".$counter."\" frameBorder=\"1\" scrolling=\"no\" id='myframe' width=270></iframe>
 </td></tr>
-</table>";
+</table></center>";
 
 
 ?>
