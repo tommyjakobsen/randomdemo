@@ -27,6 +27,29 @@ body {
 ";
 
 ?>
+
+
+a:link {
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+a:active {
+  text-decoration: underline;
+  color: white;
+}
+
+
 </style>
 </head>
 <body>

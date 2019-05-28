@@ -24,7 +24,7 @@ onload=gogo;
 </script>
 
 
-<style>A
+<style>
 
 a:link {
   text-decoration: none;
