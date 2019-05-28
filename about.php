@@ -24,7 +24,30 @@ onload=gogo;
 </script>
 
 
-<style>
+<style>A
+
+a:link {
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+a:active {
+  text-decoration: underline;
+  color: white;
+}
+
+
+
 <?php
 
 if(isset($_GET[counter]))
